@@ -18,6 +18,9 @@ for ($i = 0; $i < $jumlah_item; $i++)
     $index = rand(0, 5); 
     $beli[] = $nama_barang[$index];
     $jumlah[] = rand(1, 5);
+
+       $total[] = $harga_barang[$index] * $jumlah[$i];
+    $grandtotal += $total[$i];
 ?>
 <!DOCTYPE html>
 <html lang="en">
