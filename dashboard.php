@@ -12,6 +12,12 @@ $beli = [];
 $jumlah = [];
 $total = [];
 $grandtotal = 0;
+
+$jumlah_item = rand(1, 5);
+for ($i = 0; $i < $jumlah_item; $i++)
+    $index = rand(0, 5); 
+    $beli[] = $nama_barang[$index];
+    $jumlah[] = rand(1, 5);
 ?>
 <!DOCTYPE html>
 <html lang="en">
