@@ -1,9 +1,12 @@
 <?php
 session_start();
-if( !isset($_SESSION['username']) ) {
-    header("Location: login.php");
-    exit;
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit();
 }
+$kode_barang = ["001", "002", "003", "004", "005"];
+$nama_barang = ["Bakso urat", "Mie sop", "Bakso Dengan Mie ayam komplit", "es sirup", "Jus buah"];
+$harga_barang = [15000, 12000, 20000, 5000, 8000];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +16,8 @@ if( !isset($_SESSION['username']) ) {
     <title>Halaman Dashboard</title>
 </head>
 <body>
+    <h1>--POLGAN MART--</h1>
     <h2>Welcome <?= $_SESSION['username'];?></h2>
-    <a href="logout.php">Logout</a>
+    <a href="logout.php"><button>Logout</button></a>
 </body>
 </html>
