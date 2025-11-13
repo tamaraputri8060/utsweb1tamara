@@ -7,6 +7,11 @@ if (!isset($_SESSION['username'])) {
 $kode_barang = ["001", "002", "003", "004", "005"];
 $nama_barang = ["Bakso urat", "Mie sop", "Bakso Dengan Mie ayam komplit", "es sirup", "Jus buah"];
 $harga_barang = [15000, 12000, 20000, 5000, 8000];
+
+$beli = [];
+$jumlah = [];
+$total = [];
+$grandtotal = 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
